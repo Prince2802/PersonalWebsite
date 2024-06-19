@@ -41,5 +41,6 @@ export enum Languages {
   Spring = 'Spring',
   Hibernate = 'Hibernate',
   Express = 'Express',
-  Node = 'Node'
+  Node = 'Node',
+  Bulma = 'Bulma',
 }

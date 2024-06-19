@@ -207,6 +207,13 @@ export class WorkComponent implements OnInit {
       'I use it in my personal projects.',
       LanguagesLevel.Beginner
     );
+    const bulma = new Language(
+      13,
+      Languages.Bulma,
+      'https://cdnlogo.com/logos/b/37/bulma.svg',
+      'I use it in my personal projects and while I was working in Veridone.',
+      LanguagesLevel.Intermediate
+    );
     this.languages.push(
       html,
       javascript,
@@ -221,6 +228,7 @@ export class WorkComponent implements OnInit {
       threeJS,
       swift,
       tailwind,
+      bulma
     );
   }
 }

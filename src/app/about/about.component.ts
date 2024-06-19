@@ -21,6 +21,7 @@ export class AboutComponent {
         Languages.CSS,
         Languages.Java,
         Languages.Spring,
+        Languages.Bulma,
       ],
       'June 2022',
       'May 2024',
@@ -61,4 +62,33 @@ export class AboutComponent {
       'https://aktu.ac.in'
     ),
   ];
+
+  getLanguageLink(language: string): string {
+    switch (language.toLowerCase()) {
+      case 'javascript':
+        return 'https://developer.mozilla.org/en-US/docs/Web/JavaScript';
+      case 'typescript':
+        return 'https://www.typescriptlang.org/';
+      case 'html':
+        return 'https://developer.mozilla.org/en-US/docs/Web/HTML';
+      case 'css':
+        return 'https://developer.mozilla.org/en-US/docs/Web/CSS';
+      case 'angular':
+        return 'https://angular.dev/overview';
+      case 'ionic':
+        return 'https://ionicframework.com/docs';
+      case 'typescript':
+        return 'https://www.typescriptlang.org/docs/';
+      case 'rxjs':
+        return 'https://rxjs.dev/guide/overview';
+      case 'java':
+        return 'https://docs.oracle.com/en/java/';
+      case 'spring':
+        return 'https://docs.spring.io/spring-framework/reference/index.html';
+      case 'bulma':
+        return 'https://bulma.io/documentation/';
+      default:
+        return '#';
+    }
+  }
 }

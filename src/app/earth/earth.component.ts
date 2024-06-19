@@ -106,7 +106,7 @@ export class EarthComponent implements OnInit {
       const updated = cameraControls.update( delta );
       updateLightPosition(camera);
       if ( !disableAutoRotate )
-        cameraControls.azimuthAngle += 20 * delta * THREE.MathUtils.DEG2RAD;
+        cameraControls.azimuthAngle += 5 * delta * THREE.MathUtils.DEG2RAD;
 
       if (updated)
         renderer.render( scene, camera );

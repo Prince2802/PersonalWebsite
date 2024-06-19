@@ -17,7 +17,6 @@
       <p class="mb-4 text-gray-500 dark:text-gray-300 text-xxs">
         {{ experience.description }}
       </p>
-      <!-- Logo image -->
       <img class="mb-4 h-12" [src]="experience.imagePath" alt="{{ experience.company }} Logo">
       <div class="flex flex-wrap mt-2 text-xxxxs">
         <div
@@ -26,8 +25,7 @@
         >
           <span
             class="bg-mainPurple/30 p-2 m-1 select-none rounded-full px-3 py-1 text-xxxs font-medium leading-5"
-          >
-            {{ language }}
+          ><a [href]="getLanguageLink(language)" target="_blank" rel="noopener noreferrer">{{ language }}</a>
           </span>
         </div>
       </div>
@@ -46,7 +44,6 @@
       <p>{{ education.startDate }} — {{ education.endDate }}</p>
     </div>
     <div class="w-80 tablet:w-96">
-      <!-- Clickable institution name -->
       <a
         [href]="education.website"
         target="_blank"
@@ -63,7 +60,6 @@
       <p class="mb-4 text-gray-500 dark:text-gray-300 text-xxs">
         {{ education.description }}
       </p>
-      <!-- Logo image -->
       <img class="mb-4 h-12" [src]="education.imagePath" alt="{{ education.institution }} Logo">
       <div *ngIf="education.languages" class="flex flex-wrap mt-2 text-xxxxs">
         <div
@@ -80,4 +76,5 @@
     </div>
   </div>
 </div>
+
 
