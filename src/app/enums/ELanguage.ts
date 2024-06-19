@@ -27,7 +27,7 @@ export enum Languages {
   CouchDB = 'CouchDB',
   Ionic = 'Ionic',
   Git = 'Git',
-  ReactNative = 'React Native',
+  React = 'React',
   Paper = 'Paper',
   Expo = 'Expo',
   Quarkus = 'Quarkus',
@@ -39,5 +39,7 @@ export enum Languages {
   AFrame = 'A-Frame',
   SCRUM = 'SCRUM',
   Spring = 'Spring',
-  Hibernate = 'Hibernate'
+  Hibernate = 'Hibernate',
+  Express = 'Express',
+  Node = 'Node'
 }
