@@ -21,13 +21,8 @@ export class WorkComponent implements OnInit {
     const bankSystem = new Project(
       1,
       'Banking System',
-      'This project is build on Java Spring which depicts creating user and managemant of Bank',
-      [
-        Languages.Java,
-        Languages.CSS,
-        Languages.HTML,
-        Languages.Spring
-      ],
+      'This Java Spring project is used for creating user profiles and managing banking operations. It integrates secure user authentication, account management, and transaction handling.',
+      [Languages.Java, Languages.CSS, Languages.HTML, Languages.Spring],
       'Jan',
       2021,
       'https://github.com/Prince2802/Banksystem',
@@ -36,13 +31,8 @@ export class WorkComponent implements OnInit {
     const bookmyshow = new Project(
       2,
       'BookmyShow',
-      'This project is clone of bookmyshow. Here you can book a ticket of your show. This was made with MERN Stack',
-      [
-        Languages.React,
-        Languages.MongoDB,
-        Languages.Node,
-        Languages.Express,
-      ],
+      'This project is clone of bookmyshow. Built on the robust MERN Stack. Discover a user-friendly experience with detailed event information, seat selection, and instant confirmations',
+      [Languages.React, Languages.MongoDB, Languages.Node, Languages.Express],
       'May',
       2024,
       'https://github.com/Prince2802/BookmyShow'
@@ -65,12 +55,12 @@ export class WorkComponent implements OnInit {
     const foodOrderingApp = new Project(
       4,
       'Swiggy Clone',
-      "This project is clone of Swiggy. Developed this project with Swiggy API's and React.",
+      'This project is a Swiggy clone leveraging Swiggy APIs and developed using React. Offering users a familiar interface to browse menus, place orders, and track deliveries efficiently.',
       [
         Languages.React,
         Languages.TailwindCSS,
         Languages.HTML,
-        Languages.TypeScript
+        Languages.TypeScript,
       ],
       'June',
       2024,
@@ -79,13 +69,8 @@ export class WorkComponent implements OnInit {
     const calcapp = new Project(
       5,
       'Calulator App',
-      'This project is for calculating the interest rates over a period of time in years',
-      [
-        Languages.Angular,
-        Languages.CSS,
-        Languages.HTML,
-        Languages.TypeScript,
-      ],
+      'This project facilitates calculating interest rates over specified years. Users can input principal amounts, select interest rates, and determine accrued interest over chosen periods.',
+      [Languages.Angular, Languages.CSS, Languages.HTML, Languages.TypeScript],
       'May',
       2024,
       'https://github.com/Prince2802/calc-app'
@@ -93,13 +78,8 @@ export class WorkComponent implements OnInit {
     const shopFoodWithRecipies = new Project(
       6,
       'Shop Food Items',
-      'This project is created to purchase the food items which is made on MEAN stack.',
-      [
-        Languages.HTML,
-        Languages.CSS,
-        Languages.TypeScript,
-        Languages.Angular
-      ],
+      'This project is build on MEAN stack for purchasing food items with comprehensive menus, and real-time order updates.',
+      [Languages.HTML, Languages.CSS, Languages.TypeScript, Languages.Angular],
       'May',
       2024,
       'https://github.com/Prince2802/shop-food-with-recipies'
@@ -208,7 +188,7 @@ export class WorkComponent implements OnInit {
       LanguagesLevel.Beginner
     );
     const bulma = new Language(
-      13,
+      14,
       Languages.Bulma,
       'https://cdnlogo.com/logos/b/37/bulma.svg',
       'I use it in my personal projects and while I was working in Veridone.',
@@ -230,5 +210,46 @@ export class WorkComponent implements OnInit {
       tailwind,
       bulma
     );
+  }
+
+  getLanguageUrl(language: string): string {
+    switch (language.toLowerCase()) {
+      case 'javascript':
+        return 'https://developer.mozilla.org/en-US/docs/Web/JavaScript';
+      case 'typescript':
+        return 'https://www.typescriptlang.org/';
+      case 'html':
+        return 'https://developer.mozilla.org/en-US/docs/Web/HTML';
+      case 'css':
+        return 'https://developer.mozilla.org/en-US/docs/Web/CSS';
+      case 'angular':
+        return 'https://angular.dev/overview';
+      case 'ionic':
+        return 'https://ionicframework.com/docs';
+      case 'typescript':
+        return 'https://www.typescriptlang.org/docs/';
+      case 'rxjs':
+        return 'https://rxjs.dev/guide/overview';
+      case 'java':
+        return 'https://docs.oracle.com/en/java/';
+      case 'spring':
+        return 'https://docs.spring.io/spring-framework/reference/index.html';
+      case 'bulma':
+        return 'https://bulma.io/documentation/';
+      case 'git':
+        return 'https://git-scm.com/doc';
+      case 'react':
+        return 'https://legacy.reactjs.org/docs/getting-started.html';
+      case 'threejs':
+        return 'https://threejs.org/docs/';
+      case 'swift':
+        return 'https://www.swift.org/documentation/';
+      case 'tailwind':
+        return 'https://tailwindcss.com/docs/installation';
+      case 'express':
+        return 'https://expressjs.com/en/5x/api.html';
+      default:
+        return '#';
+    }
   }
 }

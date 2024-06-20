@@ -21,16 +21,18 @@ export class AboutComponent {
         Languages.CSS,
         Languages.Java,
         Languages.Spring,
-        Languages.Bulma,
       ],
       'June 2022',
       'May 2024',
       'Verifone',
       'Software Engineer',
-      'Worked on Google Play or AppStore like market for vendors where use Verifone terminals.',
+      "Engineered a comprehensive marketplace platform for vendors compatible with Verifone's terminals," +
+        ' like Google Play and AppStore. Manipulated UI changes and design in client side,  using Storybook. Engage in a shared code base through peer reviews and pull requests.' +
+        'Participate in planning, daily stand-ups, and retrospectives. Collaborated closely with software engineers, product managers, and' +
+        ' business stakeholders',
       'assets/images/verifone-logo.png',
       'https://www.verifone.com'
-    )
+    ),
   ];
 
   public educations: Education[] = [
@@ -62,7 +64,6 @@ export class AboutComponent {
       'https://aktu.ac.in'
     ),
   ];
-
   getLanguageLink(language: string): string {
     switch (language.toLowerCase()) {
       case 'javascript':

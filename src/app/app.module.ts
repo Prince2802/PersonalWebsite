@@ -26,7 +26,7 @@ import { AboutModule } from './about/about.module';
     AppRoutingModule,
     RouterLink,
     HttpClientModule,
-    NgxGoogleAnalyticsModule.forRoot('G-XCFJ5ZRZMV'),
+    NgxGoogleAnalyticsModule.forRoot('G-1S172NBCGL'),
     NgxGoogleAnalyticsRouterModule,
     FooterModule,
     WorkModule,
