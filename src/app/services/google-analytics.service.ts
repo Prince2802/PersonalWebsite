@@ -21,7 +21,7 @@ export class GoogleAnalyticsService {
 
   trackPageView(pagePath: string) {
     if (window.gtag) {
-      window.gtag('config', 'G-XCFJ5ZRZMV', { 'page_path': pagePath });
+      window.gtag('config', 'G-1S172NBCGL', { 'page_path': pagePath });
     }
   }
 }

@@ -26,10 +26,13 @@ export class AboutComponent {
       'May 2024',
       'Verifone',
       'Software Engineer',
-      'Worked on Google Play or AppStore like market for vendors where use Verifone terminals.',
+      "Engineered a comprehensive marketplace platform for vendors compatible with Verifone's terminals," +
+        ' like Google Play and AppStore. Manipulated UI changes and design in client side,  using Storybook. Engage in a shared code base through peer reviews and pull requests.' +
+        'Participate in planning, daily stand-ups, and retrospectives. Collaborated closely with software engineers, product managers, and' +
+        ' business stakeholders',
       'assets/images/verifone-logo.png',
       'https://www.verifone.com'
-    )
+    ),
   ];
 
   public educations: Education[] = [
@@ -61,4 +64,32 @@ export class AboutComponent {
       'https://aktu.ac.in'
     ),
   ];
+  getLanguageLink(language: string): string {
+    switch (language.toLowerCase()) {
+      case 'javascript':
+        return 'https://developer.mozilla.org/en-US/docs/Web/JavaScript';
+      case 'typescript':
+        return 'https://www.typescriptlang.org/';
+      case 'html':
+        return 'https://developer.mozilla.org/en-US/docs/Web/HTML';
+      case 'css':
+        return 'https://developer.mozilla.org/en-US/docs/Web/CSS';
+      case 'angular':
+        return 'https://angular.dev/overview';
+      case 'ionic':
+        return 'https://ionicframework.com/docs';
+      case 'typescript':
+        return 'https://www.typescriptlang.org/docs/';
+      case 'rxjs':
+        return 'https://rxjs.dev/guide/overview';
+      case 'java':
+        return 'https://docs.oracle.com/en/java/';
+      case 'spring':
+        return 'https://docs.spring.io/spring-framework/reference/index.html';
+      case 'bulma':
+        return 'https://bulma.io/documentation/';
+      default:
+        return '#';
+    }
+  }
 }
