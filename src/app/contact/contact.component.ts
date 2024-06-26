@@ -30,10 +30,10 @@ export class ContactComponent implements AfterViewInit {
   }
 
   public downloadResume(): void {
-    const resumeUrl = 'assets/resume.pdf';
+    const resumeUrl = 'assets/princeresume.pdf';
     const downloadLink = document.createElement('a');
     downloadLink.href = resumeUrl;
-    downloadLink.download = 'resume.pdf';
+    downloadLink.download = 'princeresume.pdf';
     document.body.appendChild(downloadLink);
     downloadLink.click();
     document.body.removeChild(downloadLink);
